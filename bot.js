@@ -8,7 +8,7 @@ function clean(text) {
         return text;
 }
 
-const prefix = "Your Prefix";
+const prefix = "-";
 const token = "Token Your Bot";
 
 client.on("ready", () => {
@@ -86,4 +86,5 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 
 });
 
-client.login(token);
+
+client.login(process.env.BOT_TOKEN);
